@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="css/bootstrap-4.1.1.min.css">
+		<link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<title>Platzishop</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header-container">
+			<div class="container">
+				<div class="row align-items-center d-flex justify-content-between">
+					<div class="col-3"><h1>Platzishop</h1></div>
+					<div class="col-3 text-right">
+						<a class="d-none d-sm-block text-uppercase font-weight-bold login" href="#">Login</a>
+					</div>
+					<nav class="navbar navbar-expand-sm navbar-light d-sm-none">
+						<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Navegación Toggle Menú Principal">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- /Header -->
+
+		<!-- Menu -->
+		<nav id="menu-container" class="navbar navbar-expand-sm navbar-light">
+			<div class="container d-inline-block">
+				<div class="row">
+					<div class="col-10 offset-1 col-md-4 offset-md-0">
+						<div class="collapse navbar-collapse justify-content-sm-around justify-content-md-between text-center" id="navMenu">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="index.html" class="nav-link">Home</a>
+								</li>
+								<li class="nav-item active">
+									<a href="catalogo.html" class="nav-link">Catálogo</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Carrito</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">Login</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 offset-md-2">
+						<form action="">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+								<span class="input-group-append">
+									<button type="button" class="btn btn-platzi">
+										<span class="d-none d-md-block">Buscar</span>
+										<i class="fa fa-search d-md-none"></i>
+									</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- /Menu -->
+
+		<!-- Breadcrumbs -->
+		<section id="breadcrumbs-container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav aria-label="Miga de Pan">
+							<ol class="breadcrumb pl-0">
+								<li class="breadcrumb-item"><a href="catalogo.html">Catálogo</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Todos los productos</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Breadcrumbs -->
+
+		<!-- Productos -->
+		<section id="productos-container">
+			<div class="container">
+				<div class="row">
+					<!-- Filtros -->
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="list-group d-sm-none">
+							<a href="#" id="filtrosToggle" class="list-group-item list-group-item-action navbar-toggler mb-3 d-flex justify-content-between" data-toggle="collapse" data-target="#filtros-container" aria-controls="filtros-container" aria-expanded="false"><span>Filtros</span><i class="fa fa-chevron-down"></i></a>
+						</div>
+						<div class="collapse navbar-collapse d-sm-block" id="filtros-container">
+							<div class="list-group mb-3">
+								<a href="#" class="list-group-item list-group-item-action active">Categoría</a>
+								<a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									Ropa<span class="badge badge-secondary badge-pill">174</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									Tecnología<span class="badge badge-secondary badge-pill">143</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									Accesorios<span class="badge badge-secondary badge-pill">130</span>
+								</a>
+							</div>
+							<div class="list-group mb-3">
+								<div class="list-group">
+								<a href="#" class="list-group-item list-group-item-action active">Color</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-success">Verde</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Rojo</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Amarillo</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-info">Azul</a>
+							</div>
+							</div>
+							<div class="list-group mb-3">
+								<a href="#" class="list-group-item list-group-item-action active">Sexo</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<div class="form-check">
+										<label for="masculino" class="form-check-label">
+											<input type="checkbox" value="m" id="masculino" class="form-check-input">Masculino</label>
+									</div>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<div class="form-check">
+										<label for="femenino" class="form-check-label">
+											<input type="checkbox" value="f" id="femenino" class="form-check-input">Femenino</label>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /Filtros -->
+					<!-- Listado Productos -->
+					<div class="col-12 col-md-8 col-lg-9 mb-3">
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<!-- <img class="card-img-top" src="images/producto-card.svg" alt="Leyenda Imagen de Captura"> -->
+									<img class="card-img-top" src="images/products/producto-1.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 1</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-2.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 2</h5>
+										<p class="card-text">Debitis earum a commodi ex voluptas explicabo dicta facere rationet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-3.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 3</h5>
+										<p class="card-text">Vel nihil mollitia molestias tempore magnam sequi saepe perferendis adipisci.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-4.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 4</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-5.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 5</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-6.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 6</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-7.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 7</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-8.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 8</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-9.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 9</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-10.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 10</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-4 mb-3">
+								<div class="card h-100">
+									<img class="card-img-top" src="images/products/producto-11.jpg" alt="Leyenda Imagen de Captura">
+									<div class="card-body">
+										<h5 class="card-title">Producto 11</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Paginación de Productos -->
+						<div class="row">
+							<div class="col">
+								<nav id="pagination-container" aria-label="Paginación de Productos">
+									<ul class="pagination d-flex justify-content-center">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" aria-label="Anterior">
+												<span aria-hidden="true">&laquo;</span>
+												<span class="sr-only">Anteriores Productos</span>
+											</a>
+										</li>
+										<li class="page-item active"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+												<span class="sr-only">Siguiente Productos</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- Paginación de Productos -->
+					</div>
+					<!-- /Listado Productos -->
+				</div>
+			</div>
+		</section>
+		<!-- /Productos -->
+
+		<!-- Footer -->
+		<footer id="footer-container" class="py-5">
+			<div class="container">
+				<div class="row text-center text-md-left">
+					<div class="col-md-4 mb-5 mb-md-0">
+						<form action="#" method="POST" id="suscribeForm">
+							<h4 class="text-uppercase">¿Quieres recibir todas las novedades?</h4>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+								<small class="form-text text-muted font-weight-bold">No compartiremos tu información con nadie más</small>
+							</div>
+							<button type="submit" class="btn btn-primary form-text">Suscribirme</button>
+						</form>
+					</div>
+					<div class="col-md-3 offset-md-5">
+						<h4>Navegación</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Carrito</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /Footer -->
+
+		<!-- Modal -->
+		<div class="modal fade" id=modalOferta>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Oferta exclusiva</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Regístrate hoy y recibe $15 de descuento!
+						<form action="#" class="form">
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+								<small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+							</div>
+							<button type="submit" class="btn btn-platzi">Regístrarme</button>
+							<button type="submit" class="btn btn-warning" data-dismiss="modal" id="btnNoRegistrar">No, no quiero el descuento</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Modal -->
+		
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper-1.14.3.min.js"></script>
+		<script src="js/bootstrap-4.1.1.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>mostrarModal()</script>
+	</body>
+</html>

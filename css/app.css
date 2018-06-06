@@ -1,0 +1,78 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#header-container, #info-container {
+	background-color: #99c84a;
+	color: white;
+}
+
+#menu-container {
+	background-color: #f7f7f9;
+}
+
+.btn.btn-platzi {
+	background-color: #99c84a;
+	color: white;
+}
+
+.btn.btn-platzi:hover {
+	background-color: #8ab542;
+}
+
+input.form-control:focus {
+	border-color: #99c84a;
+}
+
+#header-container .login {
+	color: white;
+}
+
+#header-container .navbar-toggler {
+	background-color: white;
+}
+
+#footer-container {
+	background-color: #1c3643;
+	color: white;
+}
+
+#footer-container h4 {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#footer-container .nav-link {
+	color: white;
+	padding: 0;
+}
+
+#breadcrumbs-container .breadcrumb {
+	background-color: white;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item a {
+	color: #1c3643;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active {
+	color: #95a5a6;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+	content: '>';
+}
+
+#filtros-container .list-group-item-action.active {
+	background-color: #99c84a;
+	border-color: #99c84a;
+}
+
+#pagination-container .page-item.active .page-link {
+	background-color: #99c84a;
+	border-color: #99c84a;
+}
+
+#pagination-container .page-item:not(.active):not(.disabled) .page-link {
+	color: #99c84a;
+}
