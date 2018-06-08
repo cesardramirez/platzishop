@@ -80,3 +80,28 @@ input.form-control:focus {
 #pagination-container .page-item:not(.active):not(.disabled) .page-link {
 	color: #99c84a;
 }
+
+#shopping-cart-container ul li {
+	line-height: 1.25rem;
+}
+
+@media screen and (max-width: 768px) { /* Hasta Medium */
+	#shopping-cart-container .ancho {
+		width: 100% !important;
+	}	
+}
+
+@media screen and (min-width: 768px) { /* Desde Medium */
+	#shopping-cart-container .info-producto {
+		width: 25% !important;
+	}	
+}
+
+@media screen and (max-width: 500px) {
+    #shopping-cart-container .info-producto {
+		width: 50% !important;
+	}
+    #shopping-cart-container .info-producto h6 {
+		font-size: .8rem;
+	}
+}
